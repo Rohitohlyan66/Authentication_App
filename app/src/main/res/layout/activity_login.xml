@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     android:layout_centerInParent="true">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:textColorHint="@color/black"
+        android:background="@drawable/edit_text_bg"
+        android:paddingLeft="30dp"
+        android:paddingTop="14dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingBottom="14dp"
+        android:gravity="start"
+        android:id="@+id/edit_text_email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="@color/black"
+        android:background="@drawable/edit_text_bg"
+        android:paddingLeft="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:gravity="start"
+        android:id="@+id/edit_text_password"
+        android:layout_below="@id/edit_text_email"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_enable"
+        android:layout_below="@id/edit_text_password"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:id="@+id/button_login"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:layout_marginBottom="50dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:textColor="#ffffff" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:text="Sign Up"
+        android:id="@+id/text_view_signup"
+        android:textStyle="bold"
+        android:textSize="18sp"
+       />
+    </LinearLayout>
+
+</RelativeLayout>
